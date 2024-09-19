@@ -1,0 +1,20 @@
+public class Aluno extends Pessoa{
+    private int GRR;
+
+    public Aluno(int GRR, String nome, String email)
+    {
+        super(nome, email);
+        this.GRR = GRR; 
+    }
+
+    public int getGRR(int GRR)
+    {
+        return this.GRR
+    }
+
+    public void setGRR(int GRR)
+    {
+        if(GRR > 0)
+            this.GRR = GRR;
+    }
+}
