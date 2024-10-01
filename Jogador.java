@@ -10,14 +10,34 @@ public class Jogador {
     public Jogador(String nome, Peao peao, int saldoInicial) 
     {
         this.nome = nome;
-        this.peao = peao;
+        this.peao = new Peao();
         this.saldo = saldoInicial;
         this.propriedades = new ArrayList<>();
         this.conta = new Conta();
         this.carta = false;
         this.posicaoAtual = 0;
     }
+
+    public int lancaDado() {
+        return Dado.lancaDado();
+    }
     
+    public String getNome() {
+        return nome;
+    }
+
+    public int getSaldo() {
+        return saldo;
+    }
+
+    public Peao getPeao() {
+        return peao;
+    }
+
+    public List<CartaTerreno> getPropriedades() {
+        return propriedades;
+    }
+
     public void comprarPropriedade(CartaTerreno propriedade) {
         if (saldo >= propriedade.getValorCompra()) {
             saldo -= propriedade.getValorCompra();
@@ -34,4 +54,24 @@ public class Jogador {
     public void receberPagamento(int valor) {
         saldo += valor;
     }
+
+    public void pagarTaxa(Jogador jogador, int valor) 
+    {
+        saldo -= valor;
+        jogador.receberPagamento(valor);
+    }
+
+    // Verifica se o jogador consegue pagar 
+    public boolean pagar(int valor)
+    {
+        if (saldo >= valor) {
+            saldo -= valor;
+            return true;
+        }
+        return false;
+    }
+
+    public void jogada(int Dado, Jo)
+
+    
 }
