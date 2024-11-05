@@ -1,11 +1,13 @@
-public class JogoFabrica{
-    protected Opcaio op;
-    
+public class JogoFabricaVender extends JogoFabrica{
+	
 	public boolean escolheOpcao(String opcao, GerenciaJogo jogo) {
 		opcao = opcao.replaceAll("\\s+", "").toLowerCase();
 		switch (opcao) {
 		case "jogar":
 			setOpcaoJogar();
+			break;
+		case "vender":
+			setOpcaoVender();
 			break;
 		case "status":
 			setOpcaoStatus();
@@ -13,16 +15,14 @@ public class JogoFabrica{
 		case "sair":
 			boolean escolha;
 			try {
-				escolha = jogo.simOuNao("Você realmente quer sair? ");
+				escolha = jogo.simOuNao("Você realmente quer sair");
 				if (escolha) {
 					setOpcaoSair();
-					return true;
 				}
-				return false;
-
 			} catch (ValorInvalidoException e) {
 				System.err.println(e.getMessage());
 				escolheOpcao(opcao, jogo);
+				return false;
 			}
 			break;
 		default:
@@ -32,24 +32,14 @@ public class JogoFabrica{
 		return true;
 	}
 
-	public boolean executarOpcao(GerenciaJogo jogo) {
-		return this.op.fazerOP();
+	private void setOpcaoVender() {
+		this.op = new Vender();
+		
 	}
 
+	@Override
 	public void setOpcaoJogar() {
-		this.op = new Jogar();
-	}
-
-	public void setOpcaoStatus() {
-		this.op = new Status();
-	}
-
-	public void setOpcaoSair() {
-		this.op = new Sair();
-	}
-
-	protected void setOpcaoErro() {
-		this.op = new Erro();
+		this.op = new JogarPrisao();
 	}
 
 }
