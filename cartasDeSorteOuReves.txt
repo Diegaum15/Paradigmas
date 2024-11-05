@@ -1,0 +1,32 @@
+De quem foi a incrível ideia de uniformizar a rapaziada com boné de grife??%pague%50
+Você aproveitou o feriado pra visitar um amigo em Morretes.%pague%25
+Quebrou o aquecedor and winter is coming!%pague%50
+O agiota cobrou o dinheiro.%pague%100
+Chegou multa do radar.%pague%150
+Gastou dinheiro em campanha de político.%pague%45
+A patroa podia pegar mais leve na decoração do ap.%pague%100
+As máquinas de caça-níquel estavam desreguladas e deram um baita prejuízo.%pague%50
+A antena da TV quebrou.%pague%30
+Sua Toyota Hilux está pedindo tapetes novos.%pague%25
+A casa caiu você caiu no tigrinho.%pague%25
+A fiscalização apertou e não foi possível batizar a gasolina no posto do Marcão%pague%25
+Confraternização no gato preto.%pague%50
+NÃO ENTENDEU AINDA? PARA TIRAR A CARTINHA TAMBÉM VAI TER QUE PAGAR!!!%pague%15
+Tem que renovar a CNH, que pena%pague%40
+Sua aposta deu green%receba%25
+Você conseguiu a senha do wifi do vizinho%receba%100
+Saída livre da prisão com o auxílio de falsos agentes penitenciários%seLivraDaprisao%0
+Roubaram o seu carro, mas você tem seguro%receba%70
+Você conseguiu vender sua arte na praia%receba%80
+Você ganhou o bolão da firma vai reveber de cada jogador%receba%50
+Você fez uma pontinha num seriado de TV%receba%100
+Ganhou no bingo%receba%50
+Seu livro acaba de ser publicado por uma grande editora%receba%100
+Vá para o início%inicio%0
+Vá para a prisão%vaiParaPrisao%0
+Suas acoes na bolsa de valores estao em alta%receba%200
+Jogue os dados novamente%dados%0
+Tirou primeiro lugar no torneio de petaca%receba%100
+Receeu uma herança inesperada%receba%75
+Vendeu alfajor na XV%receba%25
+	

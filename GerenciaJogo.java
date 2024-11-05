@@ -8,7 +8,7 @@ public class GerenciaJogo{
 	protected LinkedList<Jogador> listaJogadores;
 	protected Dado dado = new Dado();
 	protected Tabuleiro tabuleiro = new Tabuleiro();
-	private JogoFactory fabrica;
+	private JogoFabrica fabrica;
 	private int[] ultimosDados;
 	private static GerenciaJogo instacia = null;
 
@@ -23,6 +23,11 @@ public class GerenciaJogo{
 	{
         listaJogadores = new LinkedList<Jogador>();
         ultimosDados = new int[2];        
+	}
+
+	public String input()
+	{
+		return in.nextline();
 	}
 
     public Dado getDado()
@@ -46,24 +51,24 @@ public class GerenciaJogo{
 	}
 
     public void setPrisao() {
-		this.fabrica = new JogoFactoryPrisao();
+		this.fabrica = new JogoFabricaPrisao();
 	}
 
 	public void setVender() {
-		this.fabrica = new JogoFactoryVender();
+		this.fabrica = new JogoFabricaVender();
 	}
 	
 	
-	public JogoFactory getFabrica() {
+	public JogoFabrica getFabrica() {
 		return this.fabrica;
 	}
 
 	public void setConstruir() {
-		this.fabrica = new JogoFactoryConstruir();
+		this.fabrica = new JogoFabricaConstruir();
 	}
 	
 	public void setFabrica() {
-		this.fabrica = new JogoFactory();
+		this.fabrica = new JogoFabrica();
 	}
 
 	public int[] getUltimosDados() {
